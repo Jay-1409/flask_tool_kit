@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Scan QR Code to Pay</title>
+</head>
+<body>
+  <h1>Scan this QR Code to Pay</h1>
+  <img src="data:image/png;base64,{{ qr_code }}" alt="Payment QR Code">
+  <p>If you can't scan, <a href="{{ checkout_url }}" target="_blank">click here</a> to pay.</p>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Drop EV</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 40px; }
+    form { max-width: 400px; }
+    label { display: block; margin-bottom: 8px; }
+    input[type="text"], input[type="submit"] { width: 100%; padding: 10px; margin-bottom: 20px; }
+  </style>
+</head>
+<body>
+  <h1>Drop Your EV</h1>
+  <form action="/drop_vehicle" method="post">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required>
+    <!-- You can include more fields if needed, e.g., EV id -->
+    <input type="submit" value="Drop EV">
+  </form>
+</body>
+</html>

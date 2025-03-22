@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Scan EV QR Code</title>
+</head>
+<body>
+  <h1>Unlock Your EV</h1>
+  <form action="{{ url_for('scan') }}" method="POST">
+      <div>
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" required>
+      </div>
+      <div>
+          <label for="scanned_code">Scanned EV Code:</label>
+          <input type="text" id="scanned_code" name="scanned_code" required>
+      </div>
+      <button type="submit">Unlock EV</button>
+  </form>
+  <p><a href="{{ url_for('index') }}">Back to Home</a></p>
+</body>
+</html>

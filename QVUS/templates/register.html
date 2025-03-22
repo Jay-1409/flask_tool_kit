@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Register & Book EV</title>
+</head>
+<body>
+  <h1>Register and Book Your EV</h1>
+  <form action="{{ url_for('register') }}" method="POST">
+      <div>
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" required>
+      </div>
+      <div>
+          <label for="phone_number">Phone Number:</label>
+          <input type="text" id="phone_number" name="phone_number" required>
+      </div>
+      <button type="submit">Register & Book EV</button>
+  </form>
+  <p><a href="{{ url_for('index') }}">Back to Home</a></p>
+</body>
+</html>
